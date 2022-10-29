@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "689834161030",
+    "project_id": "indicatechnology-307ec",
+    "storage_bucket": "indicatechnology-307ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689834161030:android:2a03fe03c9d073074c7207",
+        "android_client_info": {
+          "package_name": "com.indicatechnology"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689834161030-p3iohqh9enqq0b8gnk893844ji91dqqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.indicatechnology",
+            "certificate_hash": "d829f5d131da34397ed235c079cdab6c1a61edbe"
+          }
+        },
+        {
+          "client_id": "689834161030-qku4k3cs8fr2rr0ff8msaivtnqncip62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.indicatechnology",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "689834161030-kefkn4uor1q8a2jlgtlo1pl5ut4eetu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDheoxUFPnSKFB4Os0WW06UC7seu09jaRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689834161030-kefkn4uor1q8a2jlgtlo1pl5ut4eetu3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
