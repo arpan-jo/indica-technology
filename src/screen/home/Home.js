@@ -11,7 +11,7 @@ const Home = () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
   const {
-    auth: {name, fbToken},
+    auth: {name},
   } = useSelector(state => state);
 
   const [messages, setMessages] = useState([]);
@@ -43,8 +43,7 @@ const Home = () => {
     <View style={styles.main}>
       <View style={styles.head}>
         <Text>
-          {name?.additionalUserInfo?.profile?.name ||
-            fbToken?.additionalUserInfo?.profile?.name}
+          {name?.additionalUserInfo?.profile?.name || name?.profile?.name}
         </Text>
 
         <TouchableOpacity
@@ -61,7 +60,7 @@ const Home = () => {
         user={{
           _id:
             name?.additionalUserInfo?.profile?.email ||
-            fbToken?.additionalUserInfo?.profile?.id,
+            name?.profile?.id + name?.profile?.first_name,
         }}
         timeTextStyle={{left: {color: 'red'}, right: {color: 'yellow'}}}
       />

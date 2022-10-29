@@ -6,7 +6,7 @@ import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {AccessToken, LoginManager} from 'react-native-fbsdk-next';
 import {useDispatch} from 'react-redux';
-import {updateUser} from '../../redux/authSlice';
+import {updateUser, updateFbToken} from '../../redux/authSlice';
 
 const Login = () => {
   const navigation = useNavigation();
@@ -69,12 +69,11 @@ const Login = () => {
       data.accessToken,
     );
     // Sign-in the user with the credential
-    const info = await auth().signInWithCredential(facebookCredential);
+    const infos = await auth().signInWithCredential(facebookCredential);
+    const info = Object.values(infos);
 
-    if (info?.additionalUserInfo?.profile?.id) {
-      dispatch(updateUser(info));
-      navigation.navigate('Drawer');
-    }
+    dispatch(updateUser(info?.[0]));
+    navigation.navigate('Drawer');
   };
 
   return (
